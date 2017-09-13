@@ -4,14 +4,28 @@
 
 def sum arr
   # YOUR CODE HERE
+  s = 0
+  arr.each{|x| s += x}
+  return s
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  n = arr.length
+  if n == 0
+    return 0
+  elsif n == 1
+    return arr[0]
+  else
+    arr = arr.sort{ |x, y| y <=> x}
+    return arr[0] + arr[1]
+  end
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  result = false
+  (0..arr.length - 2).one?{|i| n == arr[i] + arr[i + 1]}
+  return result
 end
 
 # Part 2

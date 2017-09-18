@@ -1,1 +1,1 @@
-https://still-temple-58895.herokuapp.com
+still-temple-58895.herokuapp.com
